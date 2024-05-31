@@ -1,0 +1,122 @@
+<ion-header>
+  <p>Time remaining: {{ timer }}s</p>
+  <br>
+  <p>Lives left: {{ lives }}</p>
+</ion-header>
+
+<ion-content>
+  <!-- Question 1 -->
+  <ion-card *ngIf="currentQuestion === 1" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 1</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the largest organ in the human body?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 1 -->
+  <ion-list *ngIf="currentQuestion === 1" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 1)" class="answer-button">
+      <ion-label>Liver</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 1)" class="answer-button">
+      <ion-label>Skin</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 1)" class="answer-button">
+      <ion-label>Brain</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 2</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the process by which plants make their food called?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 2 -->
+  <ion-list *ngIf="currentQuestion === 2" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 2)" class="answer-button">
+      <ion-label>Photosynthesis</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 2)" class="answer-button">
+      <ion-label>Respiration</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 2)" class="answer-button">
+      <ion-label>Digestion</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 3</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">Which organ is responsible for pumping blood throughout the body?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 3 -->
+  <ion-list *ngIf="currentQuestion === 3" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 3)" class="answer-button">
+      <ion-label>Brain</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 3)" class="answer-button">
+      <ion-label>Heart</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 3)" class="answer-button">
+      <ion-label>Liver</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 4 -->
+  <ion-card *ngIf="currentQuestion === 4" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 4</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the boiling point of water at sea level?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 4 -->
+  <ion-list *ngIf="currentQuestion === 4" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 4)" class="answer-button">
+      <ion-label>100°C</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 4)" class="answer-button">
+      <ion-label>50°C</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 4)" class="answer-button">
+      <ion-label>0°C</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 5 -->
+  <ion-card *ngIf="currentQuestion === 5" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 5</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What part of the plant is responsible for making seeds?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 5 -->
+  <ion-list *ngIf="currentQuestion === 5" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 5)" class="answer-button">
+      <ion-label>Root</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 5)" class="answer-button">
+      <ion-label>Leaves</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 5)" class="answer-button">
+      <ion-label>Flower</ion-label>
+    </ion-button>
+  </ion-list>
+</ion-content>

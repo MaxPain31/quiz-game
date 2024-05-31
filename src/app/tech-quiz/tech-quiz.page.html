@@ -1,0 +1,110 @@
+
+<ion-header><p>Time remaining:{{ timer}}s</p><br><p>Lives left: {{lives}}</p></ion-header>
+<ion-content>
+  <!-- Question 1 -->
+
+  <ion-card *ngIf="currentQuestion === 1">
+    <ion-card-header>
+      Question 1:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What does "WWW" stand for in a website browser?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 1)">
+          World Wide Web
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 1)">
+          Web World Wide
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 1)">
+          Wide Web World
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2">
+    <ion-card-header>
+      Question 2:
+    </ion-card-header>
+    <ion-card-content>
+      <p>Which device is primarily used to take photographs?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 2)">
+          Printer
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 2)">
+          Camera
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 2)">
+          Mouse
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3">
+    <ion-card-header>
+      Question 3:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the most commonly used search engine?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 3)">
+          Bing
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 3)">
+          Yahoo
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 3)">
+          Google
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 4 -->
+  <ion-card *ngIf="currentQuestion === 4">
+    <ion-card-header>
+      Question 4:
+    </ion-card-header>
+    <ion-card-content>
+      <p>Which of these is an input device?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 4)">
+          Monitor
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 4)">
+          Keyboard
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 4)">
+          Printer
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 5 -->
+  <ion-card *ngIf="currentQuestion === 5">
+    <ion-card-header>
+      Question 5:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What part of the computer is used to point and click?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 5)">
+          Monitor
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 5)">
+          Keyboard
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 5)">
+          Mouse
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

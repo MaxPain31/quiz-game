@@ -1,0 +1,112 @@
+
+
+<ion-header><p>Time remaining:{{ timer}}s</p><br><p>Lives left: {{lives}}</p></ion-header>
+<ion-content>
+<ion-content>
+  <!-- Question 1 -->
+
+  <ion-card *ngIf="currentQuestion === 1">
+    <ion-card-header>
+      Question 1:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What does "CPU" stand for in computer terminology?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 1)">
+          Central Processing Unit
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 1)">
+          Central Process Unit
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 1)">
+          Central Print Unit
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2">
+    <ion-card-header>
+      Question 2:
+    </ion-card-header>
+    <ion-card-content>
+      <p>Which programming language is known for its use in web development and has a mascot named "Duke"?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 2)">
+          Python
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 2)">
+          C#
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 2)">
+          Java
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3">
+    <ion-card-header>
+      Question 3:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the term for malicious software designed to harm, exploit, or otherwise compromise the data or functionality of a computer?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 3)">
+          Virus
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 3)">
+          Firewall
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 3)">
+          Browser
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 4 -->
+  <ion-card *ngIf="currentQuestion === 4">
+    <ion-card-header>
+      Question 4:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the name of Apple's tablet device?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 4)">
+          Galaxy Tab
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 4)">
+          Surface Pro
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 4)">
+          Ipad
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 5 -->
+  <ion-card *ngIf="currentQuestion === 5">
+    <ion-card-header>
+      Question 5:
+    </ion-card-header>
+    <ion-card-content>
+      <p>Which company is known for its Windows operating system?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 5)">
+          Apple
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 5)">
+          Microsoft
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 5)">
+          Google
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

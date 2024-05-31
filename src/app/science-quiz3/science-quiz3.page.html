@@ -1,0 +1,122 @@
+<ion-header>
+  <p>Time remaining: {{ timer }}s</p>
+  <br>
+  <p>Lives left: {{ lives }}</p>
+</ion-header>
+
+<ion-content>
+  <!-- Question 1 -->
+  <ion-card *ngIf="currentQuestion === 1" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 1</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the chemical formula for table salt?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 1 -->
+  <ion-list *ngIf="currentQuestion === 1" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 1)" class="answer-button">
+      <ion-label>H2O</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 1)" class="answer-button">
+      <ion-label>NaCl</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 1)" class="answer-button">
+      <ion-label>CO2</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 2</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the study of the Earth's atmosphere and weather called?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 2 -->
+  <ion-list *ngIf="currentQuestion === 2" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 2)" class="answer-button">
+      <ion-label>Geology</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 2)" class="answer-button">
+      <ion-label>Meteorology</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 2)" class="answer-button">
+      <ion-label>Astronomy</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 3</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the process by which plants release water vapor into the atmosphere called?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 3 -->
+  <ion-list *ngIf="currentQuestion === 3" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 3)" class="answer-button">
+      <ion-label>Photosynthesis</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 3)" class="answer-button">
+      <ion-label>Transpiration</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 3)" class="answer-button">
+      <ion-label>Evaporation</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 4 -->
+  <ion-card *ngIf="currentQuestion === 4" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 4</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the process by which cells divide to create two identical cells called?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 4 -->
+  <ion-list *ngIf="currentQuestion === 4" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 4)" class="answer-button">
+      <ion-label>Meiosis</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 4)" class="answer-button">
+      <ion-label>Mitosis</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 4)" class="answer-button">
+      <ion-label>Cytokinesis</ion-label>
+    </ion-button>
+  </ion-list>
+
+  <!-- Question 5 -->
+  <ion-card *ngIf="currentQuestion === 5" class="question-card custom-bg-color">
+    <ion-card-header>
+      <h2 class="question-title">Question 5</h2>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">What is the most abundant gas in Earth's atmosphere?</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for Question 5 -->
+  <ion-list *ngIf="currentQuestion === 5" class="answer-options">
+    <ion-button expand="block" (click)="checkAnswer('a', 5)" class="answer-button">
+      <ion-label>Oxygen</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('b', 5)" class="answer-button">
+      <ion-label>Carbon Dioxide</ion-label>
+    </ion-button>
+    <ion-button expand="block" (click)="checkAnswer('c', 5)" class="answer-button">
+      <ion-label>Nitrogen</ion-label>
+    </ion-button>
+  </ion-list>
+</ion-content>

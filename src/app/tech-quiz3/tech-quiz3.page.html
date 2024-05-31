@@ -1,0 +1,110 @@
+
+<ion-header><p>Time remaining:{{ timer}}s</p><br><p>Lives left: {{lives}}</p></ion-header>
+<ion-content>
+  <!-- Question 1 -->
+
+  <ion-card *ngIf="currentQuestion === 1">
+    <ion-card-header>
+      Question 1:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What does "HTTP" stand for?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 1)">
+          HyperText Transfer Protocol
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 1)">
+          HighText Transfer Protocol
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 1)">
+          HyperText Transmission Protocol
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 2 -->
+  <ion-card *ngIf="currentQuestion === 2">
+    <ion-card-header>
+      Question 2:
+    </ion-card-header>
+    <ion-card-content>
+      <p>Which company developed the Linux operating system?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 2)">
+          Apple
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 2)">
+          Microsoft
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 2)">
+          Linus Torvalds
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 3 -->
+  <ion-card *ngIf="currentQuestion === 3">
+    <ion-card-header>
+      Question 3:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What is the main function of a firewall in a computer network?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 3)">
+          To prevent unauthorized access
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 3)">
+          To speed up network connections
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 3)">
+          To manage email traffic
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 4 -->
+  <ion-card *ngIf="currentQuestion === 4">
+    <ion-card-header>
+      Question 4:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What does "SSD" stand for in data storage technology?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 4)">
+          Solid State Drive
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 4)">
+          Super Speed Drive
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 4)">
+          Simple Storage Device
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Question 5 -->
+  <ion-card *ngIf="currentQuestion === 5">
+    <ion-card-header>
+      Question 5:
+    </ion-card-header>
+    <ion-card-content>
+      <p>What does "IP" stand for in "IP address"?</p>
+      <ion-list>
+        <ion-item button (click)="checkAnswer('a', 5)">
+          Internet Program
+        </ion-item>
+        <ion-item button (click)="checkAnswer('b', 5)">
+          Internet Protocol
+        </ion-item>
+        <ion-item button (click)="checkAnswer('c', 5)">
+          Internet Provider
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

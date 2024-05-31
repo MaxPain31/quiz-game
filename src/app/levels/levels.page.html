@@ -1,0 +1,10 @@
+
+<ion-content >
+<div class="level-list-container">
+  <h2 class="level-header">Choose Level</h2>
+    <ion-item button *ngFor="let level of levels" class="level-item" (click)="selectLevel(level)">
+      <ion-icon name="star" slot="start" class="level-icon"></ion-icon>
+        <h2 class="level-title">Level {{ level }}</h2>
+    </ion-item>
+</div>
+</ion-content>

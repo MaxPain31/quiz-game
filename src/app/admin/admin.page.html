@@ -1,0 +1,25 @@
+<div class="admin-container">
+  <div class="admin-header">
+    <h2>Admin Panel</h2>
+  </div>
+
+  <div class="question-list" *ngIf="quizList && quizList.length > 0">
+    <div class="question-item" *ngFor="let quiz of quizList">
+      <div class="question-content">
+        <p class="question">{{ quiz.question }}</p>
+        <div class="button-group">
+          <ion-button (click)="updateQuiz(quiz)" color="primary" size="small">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+          <ion-button (click)="confirmDeleteQuiz(quiz)" color="danger" size="small">
+            <ion-icon name="trash-outline"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-question-button">
+    <ion-button color="primary" (click)="goToCreate()">Add New Question</ion-button>
+  </div>
+</div>

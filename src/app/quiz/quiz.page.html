@@ -1,0 +1,25 @@
+<ion-header>
+  <p>Time remaining: {{ timer }}s</p><br>
+  <p>Lives left: {{ lives }}</p>
+</ion-header>
+
+<ion-content>
+  <!-- Display only the current question -->
+  <ion-card *ngIf="quizList.length > 0" class="question-card custom-bg-color">
+    <ion-card-header>
+    </ion-card-header>
+    <ion-card-content class="question-content">
+      <p class="question-text">{{ quizList[currentQuestionIndex].question }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Answer Options for the current question -->
+  <ion-list *ngIf="quizList.length > 0" class="answer-options">
+    <ion-button *ngFor="let choice of quizList[currentQuestionIndex].choices"
+                expand="block"
+                (click)="checkAnswer(choice)"
+                class="answer-button">
+      {{ choice }}
+    </ion-button>
+  </ion-list>
+</ion-content>

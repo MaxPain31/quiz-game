@@ -1,0 +1,24 @@
+.custom-button {
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #6e63ff; /* Background color */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .custom-background {
+    background-color: #7898d8; /* Custom background color */
+  }
+
+  ion-content {
+  --background: #CBF9F7; /* Change this color to your preferred background color */
+}
+ion-toolbar {
+  --background: #6e63ff; /* Background color for the toolbar */
+  --color: white; /* Text color for the toolbar */
+}
+.custom-button {
+    width: 300px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+  }
+  

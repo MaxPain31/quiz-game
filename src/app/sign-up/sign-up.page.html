@@ -1,0 +1,112 @@
+<ion-content [fullscreen]="true" class="signup-content">
+  <div id="container">
+    <img src="../assets/images/logo.jpeg.png" alt="Logo" class="logo-image">
+    <div class="header">
+      <strong>Join the Quiz Fun!</strong>
+      <p>Create an account to start playing</p>
+    </div>
+
+    <div class="input-container">
+      <ion-icon color="medium" name="mail" class="input-icon"></ion-icon>
+      <input type="email" class="user-input" [(ngModel)]="email" placeholder="Email">
+    </div>
+
+    <div class="input-container">
+      <ion-icon color="medium" name="lock-closed" class="input-icon"></ion-icon>
+      <input type="password" class="user-input" [(ngModel)]="password" placeholder="Password">
+    </div>
+
+    <div class="input-container">
+      <ion-icon color="medium" name="lock-closed" class="input-icon"></ion-icon>
+      <input type="password" class="user-input" [(ngModel)]="retypePassword" placeholder="Retype Password">
+    </div>
+
+    <ion-button expand="block" shape="round" class="custom-signup-button" (click)="signUp()">Sign Up</ion-button>
+  </div>
+</ion-content>
+
+<style>
+  .signup-content {
+    --background: linear-gradient(135deg, #CBF9F7 0%, #A4ECE9 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    flex-direction: column; /* Added to allow column layout */
+  }
+
+  .logo-image {
+    width: 150px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and container */
+  }
+
+  #container {
+    width: 90%;
+    max-width: 400px;
+    padding: 50px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto; /* Centered container with auto margin */
+    margin-top: 20px; /* Adjust margin top to be more lower */
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .header strong {
+    font-size: 35px;
+    color: #4a4a4a;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+  }
+
+  .header p {
+    font-size: 16px;
+    color: #4a4a4a;
+  }
+
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8c8c8c;
+  }
+
+  .user-input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 2px solid #8e26a8;
+    border-radius: 25px;
+    font-size: 16px;
+    background: #fafafa;
+    color: black;
+  }
+
+  .custom-signup-button {
+    --background: #8e26a8; /* Custom background color */
+    --border-radius: 25px;
+    --padding-start: 15px;
+    --padding-end: 15px;
+    --color: white; /* Custom text color */
+    --background-hover: #45A049; /* Custom hover color */
+    --background-activated: #388E3C; /* Custom active color */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+  }
+
+  #container ::placeholder {
+    color: gray;
+  }
+</style>

@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+ 
+</ion-header>
+
+<ion-content [fullscreen]="true" class="custom-content">
+  <ion-header collapse="condense">
+  
+  </ion-header>
+
+  <!-- Image -->
+  <img src="../assets/images/logo.jpeg.png" alt="">
+
+  <h2 class="play-text">Let's Play!</h2> 
+
+  <h3 class="level-up-text">Play now and level up</h3> 
+  
+  <div class="start">
+    <!-- Play Button -->
+    <ion-button shape="round" (click)="play()" color="primary" class="custom-button">
+      <ion-icon name="play"></ion-icon>
+      <ion-label>Play</ion-label>
+    </ion-button>
+    
+    <!-- About Button -->
+    <ion-button shape="round" (click)="about()" color="secondary" class="custom-button">
+      <ion-icon name="information-circle"></ion-icon>
+      <ion-label>About</ion-label>
+    </ion-button>
+  </div>
+</ion-content>
