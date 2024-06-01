@@ -1,0 +1,26 @@
+
+  
+
+<ion-header [translucent]="true">
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="ion-no-padding ion-align-items-center" style="height: calc(100% - 56px); background-color: #CBF9F7;">
+    <ion-row class="ion-align-items-center" style="height: 100%;">
+      <ion-col size="12" class="ion-text-center">
+        <img src="../assets/images/logo.jpeg.png" alt="">
+
+       
+        <div class="ion-padding">
+          <!-- Apply custom classes to resize buttons -->
+          <ion-button size="large" class="custom-button" (click)="goToType('Mathematics')">Mathematics</ion-button>
+
+          <ion-button size="large" class="custom-button" (click)="goToType('Science')">Science</ion-button>
+          
+          <ion-button size="large" class="custom-button" (click)="goToType('Technology')">Technology</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
