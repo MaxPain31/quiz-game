@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" class="login-content">
+  <ion-button (click)="back()">
+    Back
+  </ion-button>
+  <div id="container">
+    <img src="../assets/images/logo.jpeg.png" alt="Logo" class="logo-image">
+    <div class="header">
+      <strong>Login to Your Account</strong>
+    </div>
+
+    <div class="input-container">
+      <ion-icon color="medium" name="mail" class="input-icon"></ion-icon>
+      <input type="email" class="user-input" [(ngModel)]="email" placeholder="Email">
+    </div><br>
+    <div class="input-container">
+      <ion-icon color="medium" name="lock-closed" class="input-icon"></ion-icon>
+      <input type="password" class="user-input" [(ngModel)]="password" placeholder="Password">
+    </div><br>
+
+    <ion-button expand="block" shape="round" class="custom-login-button" (click)="login()">Login</ion-button>
+    <a href="/sign-up">SIGN UP</a>
+  </div>
+</ion-content>

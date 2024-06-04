@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <img src="../assets/images/logo.jpeg.png" alt="Logo">
+    <h2>RESULTS</h2>
+    <div class="content">
+      <h5>Total Correct Answers</h5>
+      <p>{{ correctAnswer }} out of {{ totalQuestion }} Questions</p>
+    </div>
+    <div class="result">
+      <h1>Your Final Score is</h1>
+      <div class="score">
+        <h1>{{ score }}</h1>
+      </div>
+    </div>
+    <div class="btn">
+      <ion-button class="custom-button" (click)="chooseLevel()">Choose Level</ion-button>
+      <ion-button class="custom-button" (click)="goHome()">Home</ion-button>
+    </div>
+  </div>
+</ion-content>

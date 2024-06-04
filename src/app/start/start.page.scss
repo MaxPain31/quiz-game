@@ -1,0 +1,65 @@
+/* Set the custom content background */
+.custom-content {
+    --background: #CBF9F7; /* Background color */
+    height: 100vh; /* Set the height to match the viewport height */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Image styling */
+.custom-content img {
+    max-width: 100%; /* Ensure the image does not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add some bottom margin */
+}
+
+/* Center the start container vertically and horizontally */
+.start {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: auto; /* Allow the content to take its natural height */
+    margin-top: 150px; /* Add margin to lower the buttons */
+}
+
+/* Button styling */
+.play-button, .about-button {
+    --color: #fff; /* Text color */
+    --border-radius: 20px; /* Adjust border radius as needed */
+    --box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Box shadow */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add some bottom margin */
+    width: 200px; /* Set button width */
+    --background: linear-gradient(145deg, #4CAF50, #388E3C); /* Gradient background for play-button */
+}
+
+/* About button styling */
+.about-button {
+    --background: linear-gradient(145deg, #2196F3, #1976D2); /* Gradient background for about-button */
+}
+
+
+.play-text {
+    color: #333; /* Text color */
+    font-size: 24px; /* Font size */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Add some bottom margin */
+    font-family: Arial, sans-serif; /* Specify font family */
+    text-transform: uppercase; /* Transform text to uppercase */
+  }
+  
+  /* Level up text styling */
+  .level-up-text {
+    color: #333; /* Text color */
+    font-size: 18px; /* Font size */
+    font-weight: normal; /* Normal font weight */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Add some bottom margin */
+    font-family: Arial, sans-serif; /* Specify font family */
+    text-transform: capitalize; /* Transform text to capitalize */
+  }

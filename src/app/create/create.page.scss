@@ -1,0 +1,29 @@
+/* styles.css */
+
+/* Style for the input container */
+.input {
+    padding: 20px;
+  }
+  
+  /* Style for ion-item */
+  .input ion-item {
+    --ion-background-color: white; /* Set background color */
+    color: black; /* Set font color */
+  }
+  
+  /* Style for ion-label */
+  .input ion-label {
+    color: gray; /* Set font color */
+  }
+  
+  /* Style for ion-input */
+  .input ion-input {
+    color: black; /* Set font color */
+  }
+  
+  /* Style for ion-button */
+  .btn ion-button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
